@@ -170,7 +170,7 @@ func (ctx *textifyTraverseContext) handleElement(node *html.Node) error {
 		return err
 
 	case atom.Li:
-		if err := ctx.emit("* "); err != nil {
+		if err := ctx.emit("- "); err != nil {
 			return err
 		}
 
